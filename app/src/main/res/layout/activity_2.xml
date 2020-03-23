@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/text_view_selected3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroupRange"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Zakres: "
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_view_selected2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/radioGroupRange">
+
+        <RadioButton
+            android:id="@+id/radio10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 - 10"
+            android:onClick="checkButtonRange"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radio20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 - 20"
+            android:onClick="checkButtonRange"/>
+
+        <RadioButton
+            android:id="@+id/radio100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 - 100"
+            android:onClick="checkButtonRange"/>
+
+        <RadioButton
+            android:id="@+id/radio1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 - 1000"
+            android:onClick="checkButtonRange"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_view_selected2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Rodzaj gry: "
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radioKarty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Karty"
+            android:onClick="checkButton"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioKlawiatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klawiatura"
+            android:onClick="checkButton"/>
+
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/text_view_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Twój wybór: "
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_selected"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Naprzód!" />
+
+</RelativeLayout>

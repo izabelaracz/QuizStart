@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">First</string>
+    <string name="dodawanie">Dodawanie</string>
+    <string name="odejmowanie">Odejmowanie</string>
+    <string name="mnozenie">Mnożenie</string>
+    <string name="dzielenie">Dzielenie</string>
+    <string name="dzielenie_z_reszta">Dzielenie z resztą</string>
+    <string name="quiz_matematyczny">Quiz Matematyczny</string>
+</resources>
