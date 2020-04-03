@@ -4,17 +4,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    public static final String EXTRA_TEXT = "com.example.application.example.EXTRA_TEXT";
 
     private Button buttonAdd;
     private Button buttonMinus;
     private Button buttonMultiple;
     private Button buttonDivide;
     private Button buttonDivide2;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void openActivity2() {
         Intent intent = new Intent(this, Activity2.class);
+        intent.putExtra(EXTRA_TEXT, name);
         startActivity(intent);
     }
 
@@ -42,19 +44,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch(v.getId()) {
             case R.id.buttonAdd:
+                name = "Add";
                 openActivity2();
                 break;
             case R.id.buttonMinus:
-                Toast.makeText(this, "Button - clicked", Toast.LENGTH_SHORT).show();
+                name = "Minus";
+                openActivity2();
                 break;
             case R.id.buttonMultiple:
-                Toast.makeText(this, "Button * clicked", Toast.LENGTH_SHORT).show();
+                name = "Multiple";
+                openActivity2();
                 break;
             case R.id.buttonDivide:
-                Toast.makeText(this, "Button / clicked", Toast.LENGTH_SHORT).show();
+                name = "Divide";
+                openActivity2();
                 break;
             case R.id.buttonDivide2:
-                Toast.makeText(this, "Button /r clicked", Toast.LENGTH_SHORT).show();
+                name = "Divide2";
+                openActivity2();
                 break;
         }
     }

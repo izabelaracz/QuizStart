@@ -6,4 +6,18 @@
     <string name="dzielenie">Dzielenie</string>
     <string name="dzielenie_z_reszta">Dzielenie z resztą</string>
     <string name="quiz_matematyczny">Quiz Matematyczny</string>
+    <string name="_0_20">0 - 20</string>
+    <string name="_0_10">0 - 10</string>
+    <string name="zakres">Zakres:</string>
+    <string name="_0_100">0 - 100</string>
+    <string name="_0_1000">0 - 1000</string>
+    <string name="rodzaj_gry">Rodzaj gry:</string>
+    <string name="karty">Karty</string>
+    <string name="klawiatura">Klawiatura</string>
+    <string name="tw_j_wyb_r">Twój wybór:</string>
+    <string name="naprzod">Naprzód!</string>
+    <string name="result">0</string>
+    <string name="operation">8+2=</string>
+    <string name="wynik">Wynik prawidłowy/nieprawidłowy</string>
+    <string name="dalej">Dalej</string>
 </resources>

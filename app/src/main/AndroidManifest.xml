@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ActivityDivide2"></activity>
+        <activity android:name=".ActivityDivide" />
+        <activity android:name=".ActivityMultiple" />
+        <activity android:name=".ActivityAdd" />
+        <activity android:name=".ActivityWin" />
+        <activity android:name=".ActivityMinus" />
         <activity android:name=".Activity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

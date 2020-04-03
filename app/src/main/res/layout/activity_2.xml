@@ -13,7 +13,7 @@
         android:layout_above="@+id/radioGroupRange"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        android:text="Zakres: "
+        android:text="@string/zakres"
         android:textSize="20sp" />
 
     <RadioGroup
@@ -28,7 +28,7 @@
             android:id="@+id/radio10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0 - 10"
+            android:text="@string/_0_10"
             android:onClick="checkButtonRange"
             android:checked="true"/>
 
@@ -36,21 +36,21 @@
             android:id="@+id/radio20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0 - 20"
+            android:text="@string/_0_20"
             android:onClick="checkButtonRange"/>
 
         <RadioButton
             android:id="@+id/radio100"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0 - 100"
+            android:text="@string/_0_100"
             android:onClick="checkButtonRange"/>
 
         <RadioButton
             android:id="@+id/radio1000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0 - 1000"
+            android:text="@string/_0_1000"
             android:onClick="checkButtonRange"/>
 
     </RadioGroup>
@@ -62,7 +62,7 @@
         android:layout_above="@+id/radioGroup"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        android:text="Rodzaj gry: "
+        android:text="@string/rodzaj_gry"
         android:textSize="20sp" />
 
     <RadioGroup
@@ -75,7 +75,7 @@
             android:id="@+id/radioKarty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Karty"
+            android:text="@string/karty"
             android:onClick="checkButton"
             android:checked="true"/>
 
@@ -83,7 +83,7 @@
             android:id="@+id/radioKlawiatura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Klawiatura"
+            android:text="@string/klawiatura"
             android:onClick="checkButton"/>
 
     </RadioGroup>
@@ -97,7 +97,7 @@
         android:layout_below="@+id/radioGroup"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:text="Twój wybór: "
+        android:text="@string/tw_j_wyb_r"
         android:textSize="20sp" />
 
     <Button
@@ -107,6 +107,6 @@
         android:layout_below="@+id/text_view_selected"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Naprzód!" />
+        android:text="@string/naprzod" />
 
 </RelativeLayout>
